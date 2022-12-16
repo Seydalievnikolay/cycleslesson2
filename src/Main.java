@@ -6,6 +6,8 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
+        task8();
     }
     public static void task1(){
         System.out.println("Задача 1");
@@ -85,6 +87,25 @@ public class Main {
             total = (int) ((total+depositAmount) * (1 + monthPercents));
             if ( month % 6 == 0) {
                 System.out.println("Месяц " + month + " сумма " + total);
+            }
+        }
+    }
+    public static void task7(){
+        System.out.println("Задача 7");
+        for (int month = 1; month <= 31; month++) {
+            if (month % 7== 3)
+            {
+                System.out.println("Сегодня пятница," +month+ " -е число. Необходимо подготовить отчет");
+            }
+        }
+
+    }
+    public static void task8() {
+        System.out.println("Задача 8");
+        int year;
+        for (year = 1850; year <= 2100; year++) {
+            if (year % 79 == 0) {
+                System.out.println(year);
             }
         }
     }
