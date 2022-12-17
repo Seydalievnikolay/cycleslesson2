@@ -92,13 +92,9 @@ public class Main {
     }
     public static void task7(){
         System.out.println("Задача 7");
-        for (int month = 1; month <= 31; month++) {
-            if (month % 7== 3)
-            {
-                System.out.println("Сегодня пятница," +month+ " -е число. Необходимо подготовить отчет");
-            }
+        for (int month = 3; month <= 31; month=month+7) {
+            System.out.println("Сегодня пятница," +month+ " -е число. Необходимо подготовить отчет");
         }
-
     }
     public static void task8() {
         System.out.println("Задача 8");
